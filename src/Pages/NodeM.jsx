@@ -6,7 +6,7 @@ function NodeM() {
     <div className="Node flex p-10">
       <div>
         <h1 className="text-5xl mb-5">NodeJS & ExpressJS</h1>
-        <p className="w-[90%] p2">
+        <p className="w-[90%] p-2">
           Kurs NodeJS-ni o'rnatishdan tortib, tugallangan dasturni joylashtirish
           va uni serverda joylashtirishgacha bo'lgan asosiy ma'lumotlarni taqdim
           etadi. NodeJS o'zbek tilida to'liq kurs
@@ -30,10 +30,12 @@ function NodeM() {
       <div className="flex flex-col justify-center items-center rounded-md">
         <img
           className="w-[1700px] h-80 mr-4 rounded-md"
-          src="/public/image copy 10.png"
-          alt=""
+          src="/image copy 10.png"   // ✅ to‘g‘rilandi
+          alt="NodeJS kurs rasmi"
         />
-        <Link to={'/D4'}><button className="btn w-36 h-12 mt-10">Ko'rish →</button></Link>
+        <Link to="/D4">
+          <button className="btn w-36 h-12 mt-10">Ko'rish →</button>
+        </Link>
       </div>
     </div>
   );

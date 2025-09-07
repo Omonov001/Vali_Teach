@@ -1,4 +1,5 @@
 import { Navigate } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export default function ProtectedRoute({ user, children }) {
   if (!user) {
@@ -6,3 +7,8 @@ export default function ProtectedRoute({ user, children }) {
   }
   return children;
 }
+
+ProtectedRoute.propTypes = {
+  user: PropTypes.any,
+  children: PropTypes.node.isRequired,
+};

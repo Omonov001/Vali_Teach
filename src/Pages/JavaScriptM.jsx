@@ -7,13 +7,13 @@ function JavaScriptM() {
       <div>
         <h1 className="text-5xl mb-5">JavaScript</h1>
         <p className="w-[90%] p2">
-          Eng mashhur dasturlash tillaridan biri xisoblangan Javascript haqida <br />
+          Eng mashhur dasturlash tillaridan biri xisoblangan JavaScript haqida <br />
           to'liq kurs. Ushbu kursda siz JavaScriptni to'liq amaliyot yordamida <br />
-          o'rganishingiz mumkin, xar bir nazariy bilimlarni amaliyotda qo'llab. <br />
-          Telegram bot yordamida integratsiya qilib, loyihalar quramiz. Webpack br
-          yordamida loyihani modullarga bo'lish, json-server bilan ishlash,
-          server bilan ishlash va yana juda ham ko'p kerakli bo'lgan
-          texnologiyalar va ma'lumotlar.
+          o'rganishingiz mumkin, har bir nazariy bilimlarni amaliyotda qo'llab. <br />
+          Telegram bot yordamida integratsiya qilib, loyihalar quramiz. Webpack
+          yordamida loyihani modullarga bo'lish, JSON-server bilan ishlash,
+          server bilan ishlash va yana juda ko'p kerakli texnologiyalar va
+          ma'lumotlar.
         </p>
         <div className="N mt-10">
           <h1 className="text-3xl mb-3">Nimalarni O'rganasiz</h1>
@@ -31,10 +31,12 @@ function JavaScriptM() {
       <div className="flex flex-col justify-center items-center rounded-md">
         <img
           className="w-[1700px] h-80 mr-4 rounded-md"
-          src="/public/image copy 7.png"
-          alt=""
+          src="/image copy 7.png"
+          alt="JavaScript kursi rasmi"
         />
-        <Link to={'/D2'}><button className="btn w-36 h-12 mt-10">Ko'rish →</button></Link>
+        <Link to="/D2">
+          <button className="btn w-36 h-12 mt-10">Ko'rish →</button>
+        </Link>
       </div>
     </div>
   );

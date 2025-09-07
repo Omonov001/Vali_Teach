@@ -6,7 +6,7 @@ function ReactM() {
     <div className="React flex p-10">
       <div>
         <h1 className="text-5xl mb-5">React JS & Redux</h1>
-        <p className="w-[90%] p2">
+        <p className="w-[90%] p-2">
           Xozirda mashhur JavaScript frameworklaridan biri ReactJSni <br /> to'liq
           o'rganing. ReactJS darslari to'liq kurs o'zbek tilida. ReactJS <br />
           amaliyot va loyihalar. Ushbu kursda siz ReactJS ga oid barcha keraklik
@@ -34,10 +34,12 @@ function ReactM() {
       <div className="flex flex-col justify-center items-center rounded-md">
         <img
           className="w-[1700px] h-80 mr-4 rounded-md"
-          src="/public/image copy 8.png"
-          alt=""
+          src="/image copy 8.png"   // ✅ to‘g‘rilandi
+          alt="React kurs rasmi"
         />
-        <Link to={'/D3'}><button className="btn w-36 h-12 mt-10">Ko'rish →</button></Link>
+        <Link to="/D3">
+          <button className="btn w-36 h-12 mt-10">Ko'rish →</button>
+        </Link>
       </div>
     </div>
   );

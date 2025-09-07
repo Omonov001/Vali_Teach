@@ -1,9 +1,4 @@
-import {
-  BrowserRouter,
-  Navigate,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Left from "./Components/Left";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
@@ -34,8 +29,6 @@ import ProtectedRoute from "./Components/ProtectedRoute";
 import { Toaster } from "react-hot-toast";
 
 function App() {
-  const login =
-    location.pathname === "/Login" || location.pathname === "/register";
   const [user, setUser] = useState(null);
 
   useEffect(() => {
@@ -47,203 +40,80 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-base-300 shadow-sm h-auto absolute">
+    <div className="bg-base-300 shadow-sm h-auto min-h-screen">
       <BrowserRouter>
+        <Toaster position="top-right" />
+        <Navbar user={user} setUser={setUser} />
         <div className="flex">
-          <div className="flex-1 flex flex-col">
-            <div className=" flex-1 ">
-              <Routes>
-                <Route
-                  path="/"
-                  element={
-                    <ProtectedRoute user={user}>
-                      <Navbar user={user} setUser={setUser} />
-                      <div className="flex">
-                        <Left />
-                        <Home />
-                      </div>
-                    </ProtectedRoute>
-                  }
-                />
-                <Route
-                  path="/contact"
-                  element={
-                    <ProtectedRoute user={user}>
-                      <Navbar />
-                      <div className="flex">
-                        <Left />
-                        <Contact />
-                      </div>
-                    </ProtectedRoute>
-                  }
-                />
+          <Left />
+          <div className="flex-1">
+            <Routes>
+              {/* Asosiy sahifa */}
+              <Route
+                path="/"
+                element={
+                  <ProtectedRoute user={user}>
+                    <Home />
+                  </ProtectedRoute>
+                }
+              />
 
-                <Route
-                  path="/courses"
-                  element={
-                    <div className="flex">
-                      <Left />
-                      <div className="flex ">
-                        <Kurslar />
-                        <Navbar />
-                      </div>
-                    </div>
-                  }
-                />
-                <Route
-                  path="/profile"
-                  element={
-                    <div className="flex">
-                      <Left />
-                      <div className="flex ">
-                        <Profile user={user} />
-                        <Navbar />
-                      </div>
-                    </div>
-                  }
-                />
-                <Route
-                  path="/login"
-                  element={
-                    user ? <Navigate to="/" /> : <Signin setUser={setUser} />
-                  }
-                />
-                <Route
-                  path="/register"
-                  element={
-                    user ? <Navigate to={"/"} /> : <Signup setUser={setUser} />
-                  }
-                />
-                <Route
-                  path="/projects"
-                  element={
-                    <div className="flex">
-                      <Left />
-                      <div className="flex ">
-                        <Loyihalar />
-                        <Navbar />
-                      </div>
-                    </div>
-                  }
-                />
-                <Route
-                  path="/source-code"
-                  element={
-                    <div className="flex">
-                      <Left />
-                      <div className="flex ">
-                        <Kodmanbalar />
-                        <Navbar />
-                      </div>
-                    </div>
-                  }
-                />
-                <Route path="/D1" element={<Dars1 />} />
-                <Route path="/D2" element={<Dars2 />} />
-                <Route path="/D3" element={<Dars3 />} />
-                <Route path="/D4" element={<Dars4 />} />
-                <Route path="/D5" element={<Dars5 />} />
-                <Route path="/D6" element={<Dars6 />} />
-                <Route
-                  path="/login"
-                  element={
-                    user ? <Navigate to="/" /> : <Signin setUser={setUser} />
-                  }
-                />
-                <Route
-                  path="/register"
-                  element={
-                    user ? <Navigate to="/" /> : <Signup setUser={setUser} />
-                  }
-                />
+              {/* Contact */}
+              <Route
+                path="/contact"
+                element={
+                  <ProtectedRoute user={user}>
+                    <Contact />
+                  </ProtectedRoute>
+                }
+              />
 
-                <Route
-                  path="/FM"
-                  element={
-                    <div className="flex">
-                      <Left />
-                      <div className="flex ">
-                        <FoundationM />
-                        <Navbar />
-                      </div>
-                    </div>
-                  }
-                />
+              {/* Kurslar */}
+              <Route path="/courses" element={<Kurslar />} />
 
-                <Route
-                  path="/RM"
-                  element={
-                    <div className="flex">
-                      <Left />
-                      <div className="flex ">
-                        <ReactM />
-                        <Navbar />
-                      </div>
-                    </div>
-                  }
-                />
-                <Route
-                  path="/JM"
-                  element={
-                    <div className="flex">
-                      <Left />
-                      <div className="flex ">
-                        <JavaScriptM />
-                        <Navbar />
-                      </div>
-                    </div>
-                  }
-                />
-                <Route
-                  path="/NM"
-                  element={
-                    <div className="flex">
-                      <Left />
-                      <div className="flex ">
-                        <NextM />
-                        <Navbar />
-                      </div>
-                    </div>
-                  }
-                />
-                <Route
-                  path="/NdM"
-                  element={
-                    <div className="flex">
-                      <Left />
-                      <div className="flex ">
-                        <NodeM />
-                        <Navbar />
-                      </div>
-                    </div>
-                  }
-                />
-                <Route
-                  path="/NsM"
-                  element={
-                    <div className="flex">
-                      <Left />
-                      <div className="flex ">
-                        <NestM />
-                        <Navbar />
-                      </div>
-                    </div>
-                  }
-                />
-                <Route
-                  path="/RNM"
-                  element={
-                    <div className="flex">
-                      <Left />
-                      <div className="flex ">
-                        <ReNaM />
-                        <Navbar />
-                      </div>
-                    </div>
-                  }
-                />
-              </Routes>
-            </div>
+              {/* Loyihalar */}
+              <Route path="/projects" element={<Loyihalar />} />
+
+              {/* Kod manbalar */}
+              <Route path="/source-code" element={<Kodmanbalar />} />
+
+              {/* Profile */}
+              <Route
+                path="/profile"
+                element={
+                  <ProtectedRoute user={user}>
+                    <Profile user={user} />
+                  </ProtectedRoute>
+                }
+              />
+
+              {/* Auth sahifalar */}
+              <Route
+                path="/login"
+                element={user ? <Navigate to="/" /> : <Signin setUser={setUser} />}
+              />
+              <Route
+                path="/register"
+                element={user ? <Navigate to="/" /> : <Signup setUser={setUser} />}
+              />
+
+              {/* Darslar */}
+              <Route path="/D1" element={<Dars1 />} />
+              <Route path="/D2" element={<Dars2 />} />
+              <Route path="/D3" element={<Dars3 />} />
+              <Route path="/D4" element={<Dars4 />} />
+              <Route path="/D5" element={<Dars5 />} />
+              <Route path="/D6" element={<Dars6 />} />
+
+              {/* Modullar */}
+              <Route path="/FM" element={<FoundationM />} />
+              <Route path="/RM" element={<ReactM />} />
+              <Route path="/JM" element={<JavaScriptM />} />
+              <Route path="/NM" element={<NextM />} />
+              <Route path="/NdM" element={<NodeM />} />
+              <Route path="/NsM" element={<NestM />} />
+              <Route path="/RNM" element={<ReNaM />} />
+            </Routes>
           </div>
         </div>
       </BrowserRouter>

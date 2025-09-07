@@ -6,7 +6,7 @@ function NextM() {
     <div className="Next flex p-10">
       <div>
         <h1 className="text-5xl mb-5">Next JS</h1>
-        <p className="w-[90%] p2">
+        <p className="w-[90%] p-2">
           Bizning Nextjs kursimiz ikkala versiyada ham tajriba taklif etadi, bu
           sizga CMS integratsiyasidan foydalangan holda turli xil loyihalarni
           yaratishga yordam beradi. Amaliy o'rganish va real dasturlar bilan
@@ -26,7 +26,7 @@ function NextM() {
             <li>Font optimization</li>
             <li>Shopping cart</li>
             <li>Server Side Rendering</li>
-            <li>& NProgress</li>
+            <li>NProgress</li>
           </ul>
         </div>
       </div>
@@ -34,10 +34,12 @@ function NextM() {
       <div className="flex flex-col justify-center items-center rounded-md">
         <img
           className="w-[1700px] h-80 mr-4 rounded-md"
-          src="/public/image copy 11.png"
-          alt=""
+          src="/image copy 11.png"   // ✅ public dan chaqirish
+          alt="NextJS kurs rasmi"
         />
-        <Link to={'/D6'} ><button className="btn w-36 h-12 mt-10">Ko'rish →</button></Link>
+        <Link to="/D6">
+          <button className="btn w-36 h-12 mt-10">Ko'rish →</button>
+        </Link>
       </div>
     </div>
   );

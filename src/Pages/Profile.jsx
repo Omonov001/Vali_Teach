@@ -2,10 +2,10 @@ import { updateEmail } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "../Firebase/FireConfig";
 import toast from "react-hot-toast";
-import avatar from "/public/user.jpg";
 
 function Profile({ user }) {
   const [email, setEmail] = useState("");
+
   const changeEmail = () => {
     updateEmail(auth.currentUser, email)
       .then(() => {
@@ -17,21 +17,22 @@ function Profile({ user }) {
         toast.error("Xatolik. 😒");
       });
   };
+
   return (
     <div className="Foundation w-[95%] h-[600px] mx-auto pt-12">
       <div className="w-[90%] h-[400px] bg-base-300 mx-auto flex items-center justify-center mb-20">
         <div className="w-[40%]">
           <img
-            src={user?.photoURL ? user?.photoURL : avatar}
-            alt=""
+            src={user?.photoURL ? user?.photoURL : "/user.jpg"}
+            alt="avatar"
             className="w-[65%] rounded-full"
           />
         </div>
         <div className="grid grid-cols-2 gap-10">
           <h1>Name: {user?.displayName}</h1>
-          <h1>Email: {user?.email}</h1> <button></button>
+          <h1>Email: {user?.email}</h1>
           <button
-            className="btn w-44 "
+            className="btn w-44"
             onClick={() => document.getElementById("my_modal_3").showModal()}
           >
             Change email
@@ -39,7 +40,6 @@ function Profile({ user }) {
           <dialog id="my_modal_3" className="modal">
             <div className="modal-box">
               <form method="dialog">
-                {/* if there is a button in form, it will close the modal */}
                 <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                   ✕
                 </button>
