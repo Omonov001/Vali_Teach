@@ -1,7 +1,6 @@
-import React from "react";
-import { FaReact } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { courses, Projects, source_code } from "../Config";
+import IMG2 from "/image copy 5.png"
 
 function Home() {
   return (
@@ -9,7 +8,7 @@ function Home() {
       <div className="H1 rounded-md w-[98%] h-[600px]">
         <img
           className="BIG w-[97.8%] h-[598px] rounded-md"
-          src="/public/image copy 5.png"
+          src={IMG2}
           alt=""
         />
         <div className="flex">
@@ -18,7 +17,7 @@ function Home() {
             src="/public/img.png"
             alt=""
           />
-          <h1 className="h1 text-4xl mt-[60px] ml-[-20px] font-bold font-bold">
+          <h1 className="h1 text-4xl mt-[60px] ml-[-20px] font-bold ">
             Ayti <span> Kurslari</span>
           </h1>
         </div>
