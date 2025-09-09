@@ -246,6 +246,7 @@ body {
 .Login {
   width: 300%;
   height: 100vh;
+  position: absolute;
 }
 .Register {
   width: 300%;

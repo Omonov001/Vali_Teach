@@ -72,14 +72,16 @@ function Signin({ setUser }) {
   };
 
   return (
-    <div className="Login w-full h-screen bg-base-300 flex">
-      <div className="w-1/2 h-full bg-ttuPattern bg-cover bg-center"></div>
+    <div className="m-auto ml-[600px] Login  flex flex-col md:flex-row min-h-screen">
+      {/* Chap tarafdagi rasm */}
+      <div className="hidden md:block md:w-1/2 h-full bg-ttuPattern bg-cover bg-center"></div>
 
-      <div className="w-1/2 h-full flex flex-col justify-center items-center p-10 gap-5">
-        <h1 className="text-3xl">Sign in</h1>
+      {/* O‘ng tarafdagi form */}
+      <div className="flex-1 h-full flex flex-col justify-center items-center p-10 gap-5">
+        <h1 className="text-3xl font-bold">Sign in</h1>
 
         {/* Email input */}
-        <label className="input input-bordered flex items-center gap-2">
+        <label className="input input-bordered flex items-center gap-2 w-full max-w-md">
           <input
             type="text"
             className="grow"
@@ -90,7 +92,7 @@ function Signin({ setUser }) {
         </label>
 
         {/* Password input */}
-        <label className="input input-bordered flex items-center gap-2">
+        <label className="input input-bordered flex items-center gap-2 w-full max-w-md">
           <input
             type="password"
             className="grow"
@@ -101,24 +103,28 @@ function Signin({ setUser }) {
         </label>
 
         {/* Buttons */}
-        <div className="flex gap-16 items-center justify-center">
-          <button onClick={handleLogin} className="btn btn-outline btn-primary">
+        <div className="flex gap-4 items-center justify-center">
+          <button
+            onClick={handleLogin}
+            className="btn btn-outline btn-primary w-32"
+          >
             Sign in
           </button>
           <button
             onClick={handleGoogleLogin}
-            className="btn w-[100px] btn-outline btn-primary"
+            className="btn btn-outline btn-primary w-32"
           >
             Google
           </button>
         </div>
 
-        {/* Forgot password */}
-        <div className="flex gap-8">
+        {/* Forgot password + Register */}
+        <div className="flex flex-col items-center gap-3 mt-4">
           <button
             onClick={() => document.getElementById("my_modal_3").showModal()}
+            className="text-sm text-blue-600 hover:underline"
           >
-            Forgot Password
+            Forgot Password?
           </button>
 
           <dialog id="my_modal_3" className="modal">
@@ -132,12 +138,12 @@ function Signin({ setUser }) {
               <div className="flex items-center justify-center mt-4 gap-4">
                 <input
                   type="email"
-                  className="w-96 h-12 outline-none pl-2 rounded-lg"
+                  className="w-64 h-12 outline-none pl-2 rounded-lg border"
                   placeholder="Email manzilni kiriting"
                   onChange={(e) => setForgotPassword(e.target.value)}
                 />
                 <button
-                  className="w-[100px] bg-green-800 rounded-lg h-[48px]"
+                  className="w-[100px] bg-green-800 text-white rounded-lg h-[48px]"
                   onClick={handleForgotPassword}
                 >
                   Send
@@ -147,10 +153,10 @@ function Signin({ setUser }) {
           </dialog>
 
           <Link
-            className="text-blue-600 hover:underline text-left"
+            className="text-blue-600 hover:underline text-sm"
             to={"/register"}
           >
-            Don't have an account
+            Don’t have an account? Register
           </Link>
         </div>
       </div>

@@ -133,6 +133,7 @@ function Navbar({ user, setUser }) {
               </span>
             </li>
           </ul>
+          
         </div>
       </div>
     </div>
