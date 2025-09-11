@@ -19,9 +19,9 @@ function Profile({ user }) {
   };
 
   return (
-    <div className="Foundation w-[95%] h-[600px] mx-auto pt-12">
-      <div className="w-[90%] h-[400px] bg-base-300 mx-auto flex items-center justify-center mb-20">
-        <div className="w-[40%]">
+    <div className="P  w-[95%] h-[600px] mx-auto pt-12">
+      <div className="PP w-[90%] h-[400px] bg-base-300 mx-auto flex items-center justify-center mb-20">
+        <div className="im w-[40%]">
           <img
             src={user?.photoURL ? user?.photoURL : "/user.jpg"}
             alt="avatar"
@@ -29,8 +29,8 @@ function Profile({ user }) {
           />
         </div>
         <div className="grid grid-cols-2 gap-10">
-          <h1>Name: {user?.displayName}</h1>
-          <h1>Email: {user?.email}</h1>
+          <h1 className="h10">Name: {user?.displayName}</h1>
+          <h1 className="h11">Email: {user?.email}</h1>
           <button
             className="btn w-44"
             onClick={() => document.getElementById("my_modal_3").showModal()}

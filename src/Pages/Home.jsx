@@ -11,7 +11,7 @@ function Home() {
           src={IMG2}
           alt="banner"
         />
-        <div className="flex">
+        <div className="Ie flex">
           {/* ❌ src="/public/img.png"  ->  ✅ faqat /img.png */}
           <img
             className="m-10 w-[260px] z-10 h-[90px] shadow-sm"
@@ -24,11 +24,10 @@ function Home() {
         </div>
         <br />
         <p className="p1 text-xl ml-14 font-bold mt-[-50px]">
-          Vali <span>Teach</span> - bu sizga dasturlashni{" "}
+          Vali <span>Teach</span> - bu sizga <span>dasturlashni</span>{" "}
           <span>o'rganishda</span> yordam beradigan platforma.{" "}
-          <span>Pullik darslardagi</span> <br /> ma'lumotlarni bepul
-          olishingiz <span>mumkin.</span> Barchasi bir{" "}
-          <span>joyda!</span>
+          <span>Pullik darslardagi</span> <br /> ma'lumotlarni bepul olishingiz{" "}
+          <span>mumkin.</span> Barchasi bir <span>joyda!</span>
         </p>
         <div className="ml-14 flex gap-4 mt-5">
           <Link to={"/courses"}>
@@ -41,9 +40,9 @@ function Home() {
       </div>
 
       {/* Kurslar */}
-      <div className="flex ml-3 flex-col gap-5 mt-5">
+      <div className="Hkurslar flex ml-3 flex-col gap-5 mt-5">
         <div className="flex gap-2">
-          <h1 className="text-7xl">Kurslar</h1>
+          <h1 className="h5 text-7xl">Kurslar</h1>
           <Link to="/courses">
             <h1 className="h2 text-7xl ml-2">→</h1>
           </Link>
@@ -68,15 +67,15 @@ function Home() {
 
       {/* Loyihalar */}
       <div className="flex mt-4 cursor-pointer items-center">
-        <h1 className="text-7xl mb-5 m-5">Loyihalar</h1>
+        <h1 className="h6 text-7xl mb-5 m-5">Loyihalar</h1>
         <Link to="/Projects">
-          <h1 className="h2 text-7xl ml-2">→</h1>
+          <h1 className="h7 text-7xl ml-2">→</h1>
         </Link>
       </div>
-      <div className="K ml-2 grid grid-cols-3 gap-5">
+      <div className="L ml-2 grid grid-cols-3 gap-5">
         {Projects.map((Project, idx) => (
           <Link key={idx} to={Project.location} target="_blank">
-            <div className="card1 mb-2 flex flex-col cursor-pointer bg-base-200 rounded-md w-[380px]">
+            <div className="card2 mb-2 flex flex-col cursor-pointer bg-base-200 rounded-md w-[380px]">
               <img
                 className="w-[99.9%] rounded-md m-auto"
                 src={Project.logo}
@@ -92,15 +91,15 @@ function Home() {
 
       {/* Kod manbasi */}
       <div className="flex gap-2 items-center mb-4">
-        <h1 className="text-7xl mb-5 m-5">Kod manbasi</h1>
+        <h1 className="h8 text-7xl mb-5 m-5">Kod manbasi</h1>
         <Link to="/source-code">
-          <h1 className="h2 text-7xl ml-2">→</h1>
+          <h1 className="h9 text-7xl ml-2">→</h1>
         </Link>
       </div>
-      <div className="K ml-2 grid grid-cols-3 gap-5">
+      <div className="KM ml-2 grid grid-cols-3 gap-5">
         {source_code.map((Code, idx) => (
           <Link key={idx} to={Code.location} target="_blank">
-            <div className="card1 pl-5 mb-2 flex bg-base-200 cursor-pointer items-center justify-around rounded-md w-[380px]">
+            <div className="card3 pl-5 mb-2 flex bg-base-200 cursor-pointer items-center justify-around rounded-md w-[380px]">
               <h1 className="text-4xl font-bold font-mono">{Code.text}</h1>
               <img
                 className="w-[50px] rounded-md m-2"

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function NodeM() {
   return (
-    <div className="Node flex p-10">
+    <div className="Node Foundation flex p-10">
       <div>
         <h1 className="text-5xl mb-5">NodeJS & ExpressJS</h1>
         <p className="w-[90%] p-2">
@@ -34,7 +34,7 @@ function NodeM() {
           alt="NodeJS kurs rasmi"
         />
         <Link to="/D4">
-          <button className="btn w-36 h-12 mt-10">Ko'rish →</button>
+          <button className="btn btn7 w-36 h-12 mt-10">Ko'rish →</button>
         </Link>
       </div>
     </div>

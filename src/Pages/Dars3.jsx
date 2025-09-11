@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { FaHome } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-function Dars1() {
+function Dars3() {
   const [Video, setVideo] = useState(
     "https://www.youtube.com/embed/WVHcX-oYlgA?si=BgqX0AbEBnhlWa6a"
   );
@@ -11,13 +11,13 @@ function Dars1() {
       <div className="Dars1 flex p-10 text-2xl">
         <div className="w-40 h-96">
           <Link to={"/"}>
-            <button className="btn w-[220px] flex justify-normal items-center gap-4 text-xl">
+            <button className="btn btn5 w-[220px] flex justify-normal items-center gap-4 text-xl">
               <FaHome className="text-3xl" /> <h1>Home</h1>
             </button>
           </Link>
           <div className="w-[220px] join join-vertical flex flex-col gap-5 bg-base-100 p-2">
             <div className="collapse collapse-arrow join-item border-base-300 border">
-              <input type="radio" name="my-accordion-4" defaultChecked/>
+              <input type="radio" name="my-accordion-4" defaultChecked />
               <div className="collapse-title font-semibold">React JS</div>
               <div className="collapse-content text-x1 flex flex-col gap-2 items-baseline">
                 <button
@@ -114,16 +114,16 @@ function Dars1() {
             </div>
           </div>
         </div>
-        <div className="DHome">
+        <div className="DHome flex-1 h-[250px] sm:h-[300px] md:h-auto">
           <iframe
             width="100%"
             height="100%"
             className="rounded-lg"
             src={Video}
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
+            referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
         </div>
@@ -132,4 +132,4 @@ function Dars1() {
   );
 }
 
-export default Dars1;
+export default Dars3;

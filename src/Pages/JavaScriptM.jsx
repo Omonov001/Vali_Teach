@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 
 function JavaScriptM() {
   return (
-    <div className="JavaScript flex p-10">
+    <div className="JavaScript Foundation flex p-10">
       <div>
+
         <h1 className="text-5xl mb-5">JavaScript</h1>
         <p className="w-[90%] p2">
           Eng mashhur dasturlash tillaridan biri xisoblangan JavaScript haqida <br />
@@ -29,13 +30,13 @@ function JavaScriptM() {
       </div>
 
       <div className="flex flex-col justify-center items-center rounded-md">
-        <img
+                <img
           className="w-[1700px] h-80 mr-4 rounded-md"
           src="/image copy 7.png"
           alt="JavaScript kursi rasmi"
         />
         <Link to="/D2">
-          <button className="btn w-36 h-12 mt-10">Ko'rish →</button>
+          <button className="btn btn7 w-36 h-12 mt-10">Ko'rish →</button>
         </Link>
       </div>
     </div>

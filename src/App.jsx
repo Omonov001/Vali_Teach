@@ -47,7 +47,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-base-300 shadow-sm h-auto absolute">
+    <div className="bg-base-300  shadow-sm h-auto">
       <BrowserRouter>
         <div className="flex">
           <div className="flex-1 flex flex-col">
@@ -69,7 +69,7 @@ function App() {
                   path="/contact"
                   element={
                     <ProtectedRoute user={user}>
-                      <Navbar />
+                      <Navbar   user={user} setUser={setUser} />
                       <div className="flex">
                         <Left />
                         <Contact />
@@ -85,7 +85,7 @@ function App() {
                       <Left />
                       <div className="flex ">
                         <Kurslar />
-                        <Navbar />
+                        <Navbar  user={user} setUser={setUser}  />
                       </div>
                     </div>
                   }
@@ -97,7 +97,7 @@ function App() {
                       <Left />
                       <div className="flex ">
                         <Profile user={user} />
-                        <Navbar />
+                        <Navbar  user={user} setUser={setUser}  />
                       </div>
                     </div>
                   }
@@ -121,7 +121,7 @@ function App() {
                       <Left />
                       <div className="flex ">
                         <Loyihalar />
-                        <Navbar />
+                        <Navbar  user={user} setUser={setUser}  />
                       </div>
                     </div>
                   }
@@ -133,7 +133,7 @@ function App() {
                       <Left />
                       <div className="flex ">
                         <Kodmanbalar />
-                        <Navbar />
+                        <Navbar  user={user} setUser={setUser}  />
                       </div>
                     </div>
                   }
@@ -164,7 +164,7 @@ function App() {
                       <Left />
                       <div className="flex ">
                         <FoundationM />
-                        <Navbar />
+                        <Navbar  user={user} setUser={setUser}  />
                       </div>
                     </div>
                   }
@@ -177,7 +177,7 @@ function App() {
                       <Left />
                       <div className="flex ">
                         <ReactM />
-                        <Navbar />
+                        <Navbar  user={user} setUser={setUser}  />
                       </div>
                     </div>
                   }
@@ -189,7 +189,7 @@ function App() {
                       <Left />
                       <div className="flex ">
                         <JavaScriptM />
-                        <Navbar />
+                        <Navbar  user={user} setUser={setUser}  />
                       </div>
                     </div>
                   }
@@ -201,7 +201,7 @@ function App() {
                       <Left />
                       <div className="flex ">
                         <NextM />
-                        <Navbar />
+                        <Navbar  user={user} setUser={setUser}  />
                       </div>
                     </div>
                   }
@@ -213,7 +213,7 @@ function App() {
                       <Left />
                       <div className="flex ">
                         <NodeM />
-                        <Navbar />
+                        <Navbar  user={user} setUser={setUser}  />
                       </div>
                     </div>
                   }
@@ -225,7 +225,7 @@ function App() {
                       <Left />
                       <div className="flex ">
                         <NestM />
-                        <Navbar />
+                        <Navbar  user={user} setUser={setUser}  />
                       </div>
                     </div>
                   }
@@ -237,7 +237,7 @@ function App() {
                       <Left />
                       <div className="flex ">
                         <ReNaM />
-                        <Navbar />
+                        <Navbar  user={user} setUser={setUser}  />
                       </div>
                     </div>
                   }

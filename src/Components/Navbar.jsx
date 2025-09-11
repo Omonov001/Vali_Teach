@@ -35,14 +35,14 @@ function Navbar({ user, setUser }) {
   };
 
   return (
-    <div className="Navbar w-[82%] absolute my-1 mx-[265px] h-[90px] rounded-md bg-base-300 shadow-sm flex items-center justify-between px-6">
+    <div className="Navbar w-[82%] fixed my-1 mx-[265px] h-[90px] rounded-md bg-base-300 shadow-sm flex items-center justify-between px-6">
       {/* Logo */}
       <Link to={"/"}>
-        <img src="/img.png" alt="logo" className="h-12" />
+        <img src="/img.png" alt="logo" className="V h-12" />
       </Link>
 
       {/* Sovg'a modal */}
-      <div className="mr-[550px]">
+      <div className="BNS mr-[550px]">
         <button
           className="btn"
           onClick={() => document.getElementById("my_modal_1").showModal()}
@@ -81,7 +81,7 @@ function Navbar({ user, setUser }) {
         />
         {/* Moon icon */}
         <svg
-          className="swap-off h-10 w-10 fill-current"
+          className="icon swap-off h-10 w-10 fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -89,7 +89,7 @@ function Navbar({ user, setUser }) {
         </svg>
         {/* Sun icon */}
         <svg
-          className="swap-on h-10 w-10 fill-current"
+          className="icon swap-on h-10 w-10 fill-current"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -98,21 +98,22 @@ function Navbar({ user, setUser }) {
       </label>
 
       {/* Contact */}
-      <Link className="absolute ml-[960px]" to={"/contact"}>
-        <IoIosCall className="text-4xl" />
+      <Link className="contactg absolute ml-[960px]" to={"/contact"}>
+        <IoIosCall className="c text-4xl" />
       </Link>
 
       {/* User info */}
-      <div className="flex rounded-full ml-10 items-center gap-4">
+      <div className="name flex rounded-full ml-10 items-center gap-4">
         <h1>{user?.displayName || "Anonim"}</h1>
         <div className="dropdown dropdown-end">
           <div
             tabIndex={0}
             role="button"
-            className="btn rounded-full btn-ghost btn-circle avatar"
+            className="btn ml-[-8px] rounded-full btn-ghost btn-circle avatar"
           >
             <div className="w-10 rounded-full overflow-hidden">
               <img
+              className="rounded-full"
                 alt="User avatar"
                 src={user?.photoURL || "/image copy 23.png"}
               />

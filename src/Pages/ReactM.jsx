@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function ReactM() {
   return (
-    <div className="React flex p-10">
+    <div className="React Javascript Foundation flex p-10">
       <div>
         <h1 className="text-5xl mb-5">React JS & Redux</h1>
         <p className="w-[90%] p-2">
@@ -38,7 +38,7 @@ function ReactM() {
           alt="React kurs rasmi"
         />
         <Link to="/D3">
-          <button className="btn w-36 h-12 mt-10">Ko'rish →</button>
+          <button className="btn btn7 w-36 h-12 mt-10">Ko'rish →</button>
         </Link>
       </div>
     </div>

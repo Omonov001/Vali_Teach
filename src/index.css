@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-x: hidden;
+}
+
 .Home {
   width: 1220px;
   height: 380vh;
@@ -69,6 +73,17 @@ span {
   width: 299px;
   height: 89px;
 }
+.P {
+  width: 1220px;
+  height: 80vh;
+  border-radius: 10px;
+  position: absolute;
+  margin-left: 278px;
+  margin-top: 110px;
+
+  border: 2px solid rgb(162, 0, 255);
+}
+
 .btn2 {
   position: absolute;
   z-index: 10;
@@ -260,4 +275,401 @@ body {
 }
 h2 {
   color: rgb(0, 123, 255);
+}
+/* 📱 Telefonlar uchun (max-width: 640px) */
+@media (max-width: 640px) {
+  .Left {
+    width: 150px;
+    position: fixed;
+  }
+  .Left .Left1 {
+    width: 148px;
+  }
+  .Left1 h1 {
+    font-size: 12px;
+    position: absolute;
+    margin-left: 31px;
+  }
+  .span {
+    font-size: 20px;
+  }
+  .I {
+    margin-top: 240px;
+    gap: 10px;
+  }
+  .Navbar {
+    width: 460px;
+    margin-left: 150px;
+    position: fixed;
+  }
+  .Navbar .V {
+    width: 130px;
+    position: absolute;
+    height: 45px;
+    margin-left: -10px;
+    margin-top: -23px;
+  }
+  .Navbar .BNS {
+    width: 50px;
+    margin-left: 145px;
+  }
+  .BNS button {
+    width: 50px;
+    font-size: 10px;
+  }
+  .modal-box {
+    position: fixed;
+    margin-left: -900px;
+    margin-top: -950px;
+  }
+  .swap {
+    margin-left: 250px;
+  }
+  .swap .icon {
+    width: 30px;
+  }
+  .contactg {
+    margin-left: 300px;
+  }
+  .contactg .c {
+    font-size: 30px;
+  }
+  .name {
+    margin-left: -400px;
+    font-size: 12px;
+    margin-right: 3px;
+  }
+  .name img {
+    margin-left: -0px;
+    margin-top: 7px;
+    position: absolute;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  .Home {
+    width: 460px;
+    margin-left: 154px;
+    height: 300px;
+    font-size: 10px;
+    margin: 100px auto;
+  }
+  .Home .BIG {
+    width: 433px;
+    height: 260px;
+  }
+  .H1 {
+    width: 436px;
+    height: 263px;
+  }
+  .Ie img {
+    width: 140px;
+    height: 50px;
+    margin-left: 20px;
+  }
+  .Ie h1 {
+    font-size: 24px;
+    margin-top: 90px;
+    margin-left: 20px;
+  }
+  .p1 {
+    width: 400px;
+    font-size: 14px;
+    text-align: left;
+    margin-top: -10px;
+    margin-left: 20px;
+  }
+  .btn1 {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-left: -30px;
+  }
+  .btn2 {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 50px;
+    margin-left: 233px;
+  }
+  .Hkurlar {
+    width: 100px;
+  }
+  .h5 {
+    font-size: 50px;
+    margin-top: 10px;
+  }
+  .h2 {
+    font-size: 50px;
+    margin-top: 10px;
+  }
+  .K {
+    margin-left: -10px;
+  }
+  .card1 {
+    width: 140px;
+  }
+  .card1 h1 {
+    font-size: 18px;
+  }
+  .L {
+    margin-left: -0px;
+  }
+  .card2 {
+    width: 140px;
+  }
+  .card2 h1 {
+    font-size: 18px;
+  }
+  .h6 {
+    font-size: 50px;
+    margin-left: -3px;
+    margin-top: -0px;
+  }
+  .h7 {
+    font-size: 50px;
+    margin-top: -20px;
+    color: rgb(162, 0, 255);
+  }
+  .KM {
+    margin-left: -0px;
+  }
+  .card3 {
+    width: 140px;
+  }
+  .card3 h1 {
+    font-size: 14px;
+  }
+  .card3 img {
+    width: 20px;
+    margin-left: -118px;
+    position: absolute;
+  }
+  .h8 {
+    font-size: 50px;
+    margin-left: -3px;
+    margin-top: -0px;
+  }
+  .h9 {
+    font-size: 50px;
+    margin-top: -20px;
+    color: rgb(162, 0, 255);
+  }
+  .Kurslar {
+    width: 462px;
+    margin-left: 162px;
+  }
+  .Loyihalar {
+    width: 462px;
+    margin-left: 162px;
+  }
+  .Loyihalar .h6 {
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .Kodmanbalar {
+    width: 462px;
+    margin-left: 162px;
+  }
+  .Kodmanbalar .h6 {
+    margin: 10px;
+    margin-bottom: 20px;
+  }
+  .P {
+    width: 450px;
+    margin-left: 160px;
+    position: absolute;
+  }
+  .PP {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+  }
+  .im {
+    position: absolute;
+    margin-top: -300px;
+    width: 100px;
+    height: 100px;
+    margin-left: -120px;
+    margin-top: -298px;
+  }
+  .PP .grid {
+    gap: 5px;
+    font-size: 11px;
+  }
+  .h10 {
+    position: absolute;
+    margin-top: -151px;
+    margin-left: 100px;
+    font-size: 19px;
+  }
+  .h11 {
+    position: absolute;
+    margin-top: -71px;
+    margin-left: 0px;
+    font-size: 16px;
+  }
+  .Foundation {
+    width: 462px;
+    margin-left: 10px;
+    font-size: 13px;
+    padding: -10px;
+    margin-right: 10px;
+    margin: 100px;
+  }
+  .Foundation img {
+    position: absolute;
+    margin-left: -100px;
+    width: 444px;
+    z-index: 1;
+  }
+  .Foundation p {
+    z-index: 10;
+    position: absolute;
+    margin-left: -10px;
+    font-style: oblique;
+    font-weight: bold;
+  }
+  .N {
+    z-index: 100;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: -10px;
+    font-weight: bold;
+  }
+  .btn7 {
+    position: absolute;
+    z-index: 10;
+    margin-top: 200px;
+    margin-left: -135px;
+  }
+  .JavaScript img {
+    margin-left: -32px;
+    position: absolute;
+    margin-top: 0px;
+  }
+  .JavaScript{
+    margin-left: 70px;
+  }
+  .JavaScript .N {
+    margin-top: 160px;
+  }
+  .JavaScript .btn7 {
+    margin-left: -105px;
+  }
+  .React {
+    margin-left: 70px;
+  }
+  .React img {
+    margin-left: -340px;
+    margin-top: 0px;
+  }
+  .React .N {
+    margin-top: 180px;
+    font-size: 11px;
+    margin-left: -1px;
+  }
+  .React .btn7 {
+    margin-left: -255px;
+  }
+  .Left {
+    margin-left: -1px;
+  }
+  .Node img {
+    margin-left: -365px;
+    margin-top: 80px;
+  }
+  .Node {
+    margin-left: 70px;
+  }
+  .Node .btn7 {
+    margin-left: -265px;
+    margin-top: 205px;
+  }
+  .Node .N {
+    margin-top: 120px;
+  }
+  .Node p {
+    font-size: 16px;
+    margin-left: -15px;
+  }
+  .ReactNative .btn7 {
+    margin-left: -160px;
+  }
+  .ReactNative {
+    margin-left: 70px;
+  }
+  .ReactNative img {
+    margin-left: -155px;
+  }
+  .ReactNative p {
+    font-size: 16px;
+    margin-left: -15px;
+  }
+  .ReactNative .N {
+    margin-top: 140px;
+  }
+  .Next{
+    width: 455px;
+    margin-left: 81px;
+  }
+  .Next img {
+    margin-left: 75px;
+    margin-top: 15px;
+  }
+  .Next .btn7 {
+    margin-left: -50px;
+  }
+  .Dars1 .H {
+    font-size: 13px;
+  }
+  .Dars1 .btn5 {
+    margin-left: -35px;
+    width: 150px;
+  }
+  .Dars1 .join {
+    width: 150px;
+    margin-left: -35px;
+  }
+  .Dars1 .DHome {
+    width: 433px;
+    margin-left: 122px;
+    height: 300px;
+  }
+  .Home{
+    padding-right: 5px;
+    margin-left: 60px;
+  }
+  .H1{
+    margin-left: 12px;
+  }
+  .I{
+    margin-top: 300px;
+  }
+  .Navbar{
+    width: 96%;
+    margin-left: 9px;
+  }
+  .login{
+    width: 65%;
+    margin-left: -1228px;
+    overflow: hidden;
+    padding-left: 700px;
+  }
+  .login2{
+    margin-left: -1080px;
+  }
+  .Kurslar {
+    margin-left: 75px;
+  }
+    .Loyihalar {
+    margin-left: 75px;
+  }
+    .Kodmanbalar {
+    margin-left: 75px;
+  }
+  /* 💻 Planshet (641px - 1024px) */
+  @media (max-width: 1024px) {
+  }
 }

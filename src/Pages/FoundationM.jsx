@@ -6,7 +6,7 @@ function FoundationM() {
     <div className="Foundation flex p-10">
       <div>
         <h1 className="text-5xl mb-5">Foundation</h1>
-        <p className="w-[90%] p2">
+        <p className="w-[90%] p2 z-10">
           Foundation to'liq kurs o'zbek tilida. HTML, CSS, JavaScript (BEM),
           Bootstrap, SASS (SCSS) va amaliy loyihalar barchasi bitta kurs va
           asosiysi mutloqo bepul. O'zingizni birinchi web saytingizni
@@ -36,7 +36,7 @@ function FoundationM() {
           alt="Foundation kursi rasmi"
         />
         <Link to="/D1">
-          <button className="btn w-36 h-12 mt-10">Ko'rish →</button>
+          <button className="btn7 btn w-36 h-12 mt-10">Ko'rish →</button>
         </Link>
       </div>
     </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function NextM() {
   return (
-    <div className="Next flex p-10">
+    <div className="Next Foundation ReactNative flex p-10">
       <div>
         <h1 className="text-5xl mb-5">Next JS</h1>
         <p className="w-[90%] p-2">
@@ -38,7 +38,7 @@ function NextM() {
           alt="NextJS kurs rasmi"
         />
         <Link to="/D6">
-          <button className="btn w-36 h-12 mt-10">Ko'rish →</button>
+          <button className="btn btn7 w-36 h-12 mt-10">Ko'rish →</button>
         </Link>
       </div>
     </div>

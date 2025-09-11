@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function ReNaM() {
   return (
-    <div className="ReactNative flex p-10">
+    <div className="ReactNative Foundation flex p-10">
       <div>
         <h1 className="text-5xl mb-5">React Native</h1>
         <p className="w-[90%] p-2">
@@ -34,7 +34,7 @@ function ReNaM() {
           alt="React Native kurs rasmi"
         />
         <Link to="/D5">
-          <button className="btn w-36 h-12 mt-10">Ko'rish →</button>
+          <button className="btn btn7 w-36 h-12 mt-10">Ko'rish →</button>
         </Link>
       </div>
     </div>

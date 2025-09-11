@@ -5,12 +5,17 @@ import { Link } from "react-router-dom";
 function Kurslar() {
   return (
     <div className="Kurslar flex flex-col bg-base-300 shadow-sm items-start">
-      <div className="m-5 gap-5 cursor-pointer mt-5">
-        <h1 className="text-7xl mb-5 ml-[-4px]">Kurslar</h1>
+      <div className="Hkurslar flex ml-3 flex-col gap-5 mt-5">
+        <div className="flex gap-2">
+          <h1 className="h5 text-7xl">Kurslar</h1>
+          <Link to="/courses">
+            <h1 className="h2 text-7xl ml-2">→</h1>
+          </Link>
+        </div>
         <div className="K grid grid-cols-3 gap-5">
           {courses.map((course, idx) => (
             <Link key={idx} to={course.location}>
-              <div className="card1 cursor-pointer flex flex-col bg-base-200 rounded-md w-[380px] hover:shadow-lg transition">
+              <div className="card1 cursor-pointer flex flex-col bg-base-200 rounded-md w-[380px]">
                 <img
                   className="w-[99.9%] rounded-md m-auto"
                   src={course.logo}
@@ -23,7 +28,7 @@ function Kurslar() {
             </Link>
           ))}
         </div>
-      </div>
+      </div>{" "}
     </div>
   );
 }

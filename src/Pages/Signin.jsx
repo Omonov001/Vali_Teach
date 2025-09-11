@@ -77,7 +77,7 @@ function Signin({ setUser }) {
       <div className="hidden md:block md:w-1/2 h-full bg-ttuPattern bg-cover bg-center"></div>
 
       {/* O‘ng tarafdagi form */}
-      <div className="flex-1 h-full flex flex-col justify-center items-center p-10 gap-5">
+      <div className="login  flex-1 h-full flex flex-col justify-center items-center p-10 gap-5">
         <h1 className="text-3xl font-bold">Sign in</h1>
 
         {/* Email input */}

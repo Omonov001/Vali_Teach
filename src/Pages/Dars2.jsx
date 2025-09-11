@@ -11,7 +11,7 @@ function Dars2() {
       <div className="Dars1 flex p-10 text-2xl">
         <div className="w-40 h-96">
           <Link to={"/"}>
-            <button className="btn w-[220px] flex justify-normal items-center gap-4 text-xl">
+            <button className="btn btn5 w-[220px] flex justify-normal items-center gap-4 text-xl">
               <FaHome className="text-3xl" /> <h1>Home</h1>
             </button>
           </Link>

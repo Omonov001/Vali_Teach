@@ -33,18 +33,19 @@ function Left() {
   }, []);
 
   return (
+    <div className="Left hidden md:block"> 
     <div
-      className={`Left w-[16%] h-[99vh] rounded-md bg-base-300 shadow-sm mx-1 my-1 fixed ${
+      className={ `Left w-[16%] h-[99vh] rounded-md bg-base-300 shadow-sm mx-1 my-1 fixed ${
         isOpen ? "block" : "hidden"
       }`}
     >
       <p className="text-2xl pt-2 pl-2 font-mono">Sahifalar</p>
-      <div className="flex flex-col gap-6 mt-4">
+      <div className="Left1 flex flex-col gap-6 mt-4">
         {malumot.map((item) => (
           <Link key={item.id} to={item.href}>
             <div className="flex items-center gap-4 px-4 py-4 w-[90%] mx-auto rounded-md bg-base-100 shadow-sm cursor-pointer hover:bg-slate-500 der">
               <span
-                className={`text-2xl ${
+                className={`span text-2xl ${
                   theme === "dark" ? "text-white" : "text-black"
                 }`}
               >
@@ -57,7 +58,7 @@ function Left() {
       </div>
 
       {/* Ijtimoiy tarmoqlar */}
-      <div className="flex items-center justify-center gap-4 mt-80">
+      <div className="I flex items-center justify-center gap-4 mt-80">
         <a href="https://t.me/username" target="_blank" rel="noreferrer">
           <FaTelegram className="cursor-pointer" />
         </a>
@@ -74,6 +75,7 @@ function Left() {
           <FaGithub className="cursor-pointer" />
         </a>
       </div>
+    </div>
     </div>
   );
 }

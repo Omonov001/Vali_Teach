@@ -8,15 +8,15 @@ function Dars1() {
   );
   return (
     <>
-      <div className="Dars1 flex p-10 text-2xl">
+      <div className="Dars1  flex p-10 text-2xl">
         <div className="w-40 h-96">
           <Link to={'/'}>
-            <button className="btn w-[220px] flex justify-normal items-center gap-4 text-xl">
+            <button className="btn5 btn w-[220px] flex justify-normal items-center gap-4 text-xl">
               <FaHome className="text-3xl" /> <h1>Home</h1>
             </button>
           </Link>
           <div className="join join-vertical w-[220px] flex flex-col gap-5 bg-base-100 p-2">
-            <div className="collapse collapse-arrow join-item border-base-300 border">
+            <div className="H collapse collapse-arrow join-item border-base-300 border">
               <input type="radio" name="my-accordion-4" defaultChecked />
               <div className="collapse-title font-semibold">Foundation</div>
               <div className="collapse-content text-x1 flex flex-col gap-2 items-baseline">
