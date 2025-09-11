@@ -72,7 +72,7 @@ function Signin({ setUser }) {
   };
 
   return (
-    <div className="m-auto ml-[600px] Login  flex flex-col md:flex-row min-h-screen">
+    <div className="ml-[-2670px] Login  flex flex-col md:flex-row min-h-screen">
       {/* Chap tarafdagi rasm */}
       <div className="hidden md:block md:w-1/2 h-full bg-ttuPattern bg-cover bg-center"></div>
 
