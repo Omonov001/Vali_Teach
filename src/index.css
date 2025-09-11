@@ -549,7 +549,7 @@ h2 {
     position: absolute;
     margin-top: 0px;
   }
-  .JavaScript{
+  .JavaScript {
     margin-left: 70px;
   }
   .JavaScript .N {
@@ -610,7 +610,7 @@ h2 {
   .ReactNative .N {
     margin-top: 140px;
   }
-  .Next{
+  .Next {
     width: 455px;
     margin-left: 81px;
   }
@@ -637,39 +637,72 @@ h2 {
     margin-left: 122px;
     height: 300px;
   }
-  .Home{
+  .Home {
     padding-right: 5px;
     margin-left: 60px;
   }
-  .H1{
+  .H1 {
     margin-left: 12px;
   }
-  .I{
+  .I {
     margin-top: 300px;
   }
-  .Navbar{
+  .Navbar {
     width: 96%;
     margin-left: 9px;
   }
-  .login{
-    width: 65%;
-    margin-left: -1228px;
+  .login {
+    width: 75%;
     overflow: hidden;
-    padding-left: 700px;
+    margin-left: 100px;
   }
-  .login2{
+  .Register {
+    width: 85%;
+     margin-left: -500px;
+  }
+  .login2 {
     margin-left: -1080px;
   }
   .Kurslar {
     margin-left: 75px;
   }
-    .Loyihalar {
+  .re{
+    margin-left: 240px;
+    position: absolute;
+    margin-top: -150px;
+  }
+  .Loyihalar {
     margin-left: 75px;
   }
-    .Kodmanbalar {
+  .Kodmanbalar {
     margin-left: 75px;
   }
   /* 💻 Planshet (641px - 1024px) */
-  @media (max-width: 1024px) {
+}
+@media (max-width: 1024px) {
+  .Login {
+    width: 65%;
+    overflow: hidden;
+    margin-left: 110px;
+  }
+  .Register {
+    width: 100%;
+    overflow: hidden;
+    margin-left: -430px;
+    margin-top: -150px;
+    position: relative;
+  }
+}
+@media (max-width: 450px) {
+  .Login {
+    width: 85%;
+    overflow: hidden;
+    margin-left: -10px;
+  }
+  .re {
+    width: 45%;
+    height: 60%;
+    margin-left: 240px;
+    margin-top: 0px;
   }
 }

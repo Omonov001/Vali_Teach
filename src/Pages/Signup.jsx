@@ -82,7 +82,7 @@ export default function Signup({ setUser }) {
   return (
     <div className="Register w-full bg-base-300 flex">
       <div className="w-1/2 h-full bg-ttuPattern bg-cover bg-center"></div>
-      <div className="login2 w-1/2 h-full flex flex-col justify-center items-center p-10 gap-5">
+      <div className="re w-1/2 h-full flex flex-col justify-center items-center p-10 gap-5">
         <h1 className="text-3xl">Register</h1>
 
         <label className="input input-bordered flex items-center gap-2">
